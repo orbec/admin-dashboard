@@ -7,3 +7,155 @@ body {
     height: 100%;
     margin: 0;
 }
+
+.container {
+    height: 100%;
+    background-color: rgb(233, 240, 240);
+    display: grid;
+    grid-template: 1fr 3fr 3fr/ 1fr 3fr 3fr;
+    grid-template-areas: 
+        "sidebar header header"
+        "sidebar content content"
+        "sidebar content content";
+}
+
+.header {
+    background-color: #FFFFFF;
+    grid-area: header;
+    box-shadow: 2px 0px 3px 1px #b2afb34d;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    align-items: center;
+
+
+}
+
+.sidebar {
+    background-color: rgb(113 157 238);
+    grid-area: sidebar;
+    color: white;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    align-content: stretch;
+    justify-items: center;
+
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+}
+
+.search-term {
+    justify-self: stretch;
+    padding: 1rem;
+
+}
+
+.search-term::before {
+    content: "♥";
+    color: black;
+}
+
+.search-term > input[type="search"] {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.profile-container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+
+.title-container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: left;
+    padding: 1rem;
+}
+
+.action-button {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: flex-start;
+}
+
+.action-button > button {
+    background-color: rgb(113 157 238);
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+
+
+.sidebar > ul {
+    list-style: none;
+    line-height: 2rem;
+}
+
+
+
+.projects-container {
+    grid-area: projects;
+}
+
+.announcements-container {
+    grid-area: announcements;
+
+}
+
+.trending-container {
+    grid-area: trending;
+}
+
+.projects {
+    margin-top: 1rem;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    text-align: center;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.projects > div {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 2px 0px 3px 1px #b2afb34d;
+}
+.announcements {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 0px 3px 1px #b2afb34d;
+}
+
+.announcements > div {
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+.announcements > div:nth-child(even)  {
+
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+}
+
+.trending-container > ul {
+    margin-top: 1rem;
+    list-style: none;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 2px 0px 3px 1px #b2afb34d;
+    line-height: 1.5rem;
+}
