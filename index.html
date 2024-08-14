@@ -10,18 +10,19 @@
     <div class="container">
         <div class="header">
             <div class="search-term">
-                <input type="search"  />
+                <label for="search-term"></label>
+                <input type="search"  id="search-term"/>
             </div>
             <div class="profile-container">
-                <div>notifications</div>
-                <div>logo</div>
-                <div>Jairo Lopez</div>
+                <div class="notifications"></div>
+                <div class="logo"></div>
+                <div class="name">Jairo Lopez</div>
             </div>
             <div class="title-container">
-                <div>logo</div>
+                <div class="logo"></div>
                 <div>
-                    <div>Hi there,</div>
-                    <div>Jairo Lopez (@Orbec)</div>
+                    <div class="greeting">Hi there,</div>
+                    <div class="name">Jairo Lopez (@Orbec)</div>
                 </div>
             </div>
             <div class="action-button">
@@ -31,20 +32,20 @@
             </div>
         </div>
         <div class="sidebar">
-            <div>Dashboard</div>
-            <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ul>
-            <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
+            <div class="dashboard">Dashboard</div>
+            <div class="list">
+                <div class="home">Home</div>
+                <div class="profile">Profile</div>
+                <div class="messages">Messages</div>
+                <div class="history">History</div>
+                <div class="tasks">Tasks</div>
+                <div class="communities">Communities</div>
+            </div>
+            <div class="list">
+                <div class="settings">Settings</div>
+                <div class="support">Support</div>
+                <div class="privacy">Privacy</div>
+            </div>
         </div>
         <div class="content">
             <div class="projects-container">
@@ -52,33 +53,57 @@
                 <div class="projects">
                     <div class="card">
                         <h3>Super cool project</h3>
-                        <p>Something regarding a super cool project</p>
-                        <div>icons</div>
+                        <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+                        <div class="card-icons">
+                            <div class="star"></div>
+                            <div class="view"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <h3>Less cool project</h3>
-                        <p>Something regarding a less cool project</p>
-                        <div>icons</div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <div class="card-icons">
+                            <div class="star"></div>
+                            <div class="view"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <h3>Impossible app</h3>
-                        <p>Something regarding an impossible app</p>
-                        <div>icons</div>
+                        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="card-icons">
+                            <div class="star"></div>
+                            <div class="view"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <h3>Easy peasy app</h3>
-                        <p>Something regarding an easy peasy app</p>
-                        <div>icons</div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <div class="card-icons">
+                            <div class="star"></div>
+                            <div class="view"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <h3>Ad blocker</h3>
-                        <p>Something regarding an ad blocker app</p>
-                        <div>icons</div>
+                        <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
+                        <div class="card-icons">
+                            <div class="star"></div>
+                            <div class="view"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <h3>Money maker</h3>
-                        <p>Something regarding a money maker project</p>
-                        <div>icons</div>
+                        <p>Vestibulum auctor dapibus neque.</p>
+                        <div class="card-icons">
+                            <div class="star"></div>
+                            <div class="view"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,27 +112,39 @@
                 <div class="announcements">
                     <div>
                         <h3>Site Maintenance</h3>
-                        <p>Something regarding site maintenance</p>
+                        <p>Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus.</p>
                     </div>
                     <div>
                         <h3>Community share day</h3>
-                        <p>Something regarding community share day</p>
+                        <p>Ut consequat semper viverra nam libero justo laoreet sit amet.</p>
                     </div>
                     <div>
                         <h3>Updated privacy policy</h3>
-                        <p>Something regarding updated privacy policy</p>
+                        <p>Amet est placerat in egestas erat imperdiet sed euismod nisi.</p>
                     </div>
                 </div>
             </div>
 
             <div class="trending-container">
                 <div>Trending</div>
-                <ul>
-                    <li>icon name</li>
-                    <li>icon name</li>
-                    <li>icon name</li>
-                    <li>icon name</li>
-                </ul>
+                <div class="trending">
+                    <div class="trending-item">
+                        <div></div>
+                        <div>@tegan<br>World Peace Builder</div>
+                    </div>
+                    <div class="trending-item">
+                        <div></div>
+                        <div>@morgan<br>Super Cool Project  </div>
+                    </div>
+                    <div class="trending-item">
+                        <div></div>
+                        <div>@kendall<br>Life Changing App</div>
+                    </div>
+                    <div class="trending-item">
+                        <div></div>
+                        <div>@alexxx<br>No Traffic Maker</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
