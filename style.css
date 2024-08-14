@@ -295,6 +295,7 @@ body {
     border-radius: 1rem;
     box-shadow: 2px 0px 3px 1px #b2afb34d;
     display: grid;
+    border-left: solid 8px #52525b;
 }
 
 .card-icons {
